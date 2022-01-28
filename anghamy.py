@@ -7,5 +7,4 @@ soup = BeautifulSoup(open(path), 'html5lib')
 data = soup.find_all('div', attrs={'class':'cell cell-title'})
 
 for item in data:
-    feld = item.text
-    print(feld)
+    print(feld.text)
